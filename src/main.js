@@ -23,3 +23,25 @@ function sum(x, y){
 };
 
 console.log(sum(1,2));
+
+console.log("******************************");
+
+//Area de circulo = 2*PI*r**2
+
+function areaCirculo(r){
+    console.log("Ejecutando area de circulo")
+    return Math.round(2*Math.PI*r**2);
+};
+
+console.log(areaCirculo(3))
+
+function areaCuadrado(l){
+    console.log("Ejecutando area de circulo")
+    return l*l;
+};
+
+console.log(areaCuadrado(10));
+
+const resultado = areaCuadrado(4);
+
+console.log(resultado*100)
