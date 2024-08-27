@@ -1,47 +1,36 @@
 import "./style.css";
 
-//f(x) = 2x
+const alubias = "🫘 Alubias";
+const aguacate = "🥑 Aguacate";
+const huevo = "🥚 huevo";
+const cebolla = "🧅 Cebolla";
+const tomate = "🍅 Tomate";
+const lechuga = "🥬 Lechuga";
 
-function doble(x){
-    const valor=2
-    console.log("Ejecutando doble")
-    return x*valor;
-};
+function receta(título, ingredientes, preparación){
+    
+    const estiloTitulo = "color: red; font-size: 18px; font-style: italic;";
+    
+    //Título
+    console.log(`%c${título}`, estiloTitulo);
 
+    //Ingredientes
+    console.log(`Ingredientes: ${ingredientes}`);
+    
+    //Preparación
+    console.log(`Preparación: ${preparación}`)
 
-const eldoblededos= doble(2);
+    console.log("*********************************************************");
+}
 
-console.log(eldoblededos);
+receta(
+    "Ensalada de alubias con aguacate y huevo",
+    `${alubias}, ${aguacate}, ${huevo}, ${cebolla}, ${tomate}, ${lechuga}.`,
+    "cocer las alubias y dejar enfriar. Mezclar con aguacate en cubos, huevo cocido en rodajas, cebolla en juliana, tomate en cubos y lechuga troceada. Aliñar con aceite de oliva y vinagre."
+);
 
-console.log(doble(3));
-
-console.log(doble(4));
-
-function sum(x, y){
-    console.log("Ejecutando suma")
-    return x + y;
-};
-
-console.log(sum(1,2));
-
-console.log("******************************");
-
-//Area de circulo = 2*PI*r**2
-
-function areaCirculo(r){
-    console.log("Ejecutando area de circulo")
-    return Math.round(2*Math.PI*r**2);
-};
-
-console.log(areaCirculo(3))
-
-function areaCuadrado(l){
-    console.log("Ejecutando area de circulo")
-    return l*l;
-};
-
-console.log(areaCuadrado(10));
-
-const resultado = areaCuadrado(4);
-
-console.log(resultado*100)
+receta(
+    "Ensalada de setas y bacon",
+    `setas, bacon, ${lechuga}, ${tomate}, ${cebolla}, queso.`,
+    "saltear las setas y el bacon hasta que estén dorados. Mezclar con lechuga troceada, tomate en cubos, cebolla en juliana y queso rallado. Aliñar con aceite de oliva y vinagre."
+);
