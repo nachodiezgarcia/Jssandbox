@@ -1,13 +1,13 @@
 import "./style.css";
 
-function sumar() {
-  const sumando1 = document.getElementById("sumando1").value;
-  const sumando2 = document.getElementById("sumando2").value;
+function saludo() {
+  const Nombre = document.getElementById("nombre").value;
+  const Apellido = document.getElementById("apellido").value;
 
-  const resultados = parseInt(sumando1) + parseInt(sumando2);
+  const resultados = "Hola mi nombre es " + Nombre + " " + Apellido;
 
   document.getElementById("resultado").innerHTML = resultados;
 }
 
-const botonSumar = document.getElementById("sumar");
-botonSumar.addEventListener("click", sumar);
+const botonSumar = document.getElementById("saludar");
+botonSumar.addEventListener("click", saludo);
