@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="style" src="style.css">
-    <title>Js</title>
+    <link rel="stylesheet" href="/src/style.css"/>
+    <title>Fotos Venecia</title>
 </head>
 <body>
     <div id="app">
-        <label for="nombre">Nombre</label>
-        <input id="nombre"/>
-        <label for="apellido">Apellido</label>
-        <input id="apellido">
-        <button id="saludar">Saludo</button>
-        <div id="resultado"></div>
-    </div>  
+        <img id="foto-principal" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/venecia/portada.jpg" alt="foto principal"/>
+        <div>
+            <img id="miniatura1" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/venecia/foto1.jpg" alt="Basilica de Santa María de la Salud, Venecia" class="miniatura"/>
+            <img id="miniatura2" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/venecia/foto2.jpg" alt="Un gran canal" class="miniatura"/>
+            <img id="miniatura3" src="https://raw.githubusercontent.com/Lemoncode/fotos-ejemplos/main/venecia/foto3.jpg" alt="canal tradicional con gondola" class="miniatura"/>
+        </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
 </body>
 </html>
